@@ -1,11 +1,9 @@
-// Select color input
-// Select size input
-
 // When size is submitted by the user, call makeGrid()
 
 function makeGrid(height, width) {
+//builds Grid
   var table = document.getElementById("pixelCanvas");
-      let grid = '100';
+      let grid = '';
 
   for (var i = 0; i < height; i++){
       grid += '<tr class="row-' + i + '">';
@@ -37,7 +35,7 @@ function addClickEventToCells() {
   }
 }
 var colorPicker = document.getElementById("colorPicker");
-var selectedColor = colorPicker.value; // sets color to defaul(black);
+var selectedColor = colorPicker.value; // sets color to default(black);
 colorPicker.addEventListener("input", function() {
   selectedColor = colorPicker.value;
   }, false);
